@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <a href="../index.html">Home<br></a>
+
+  <title>document</title>
+</head>
+<body>
+
+   <h1>oque está acontecendo no código abaixo;</h1> 
+    
+    <h2>const express = require("express");
+    const app = express();
+    
+    app.get('/usuario', (req, res) => {
+        res.send('Usuário acessado com sucesso');
+    });
+    
+    app.listen(3000, () => {
+        console.log('Servidor iniciado com sucesso');
+    });</h2>
+
+  <script>
+   
+    document.write("O código acima é um exemplo de um servidor HTTP simples usando o framework Express em Node.js. Aqui está o que está acontecendo no código:<br><br>");
+    document.write("I - A primeira linha importa o módulo -express- e o atribui à constante -express-. Isso é feito para usar as funcionalidades do Express no código.<br><br>");
+    document.write("II - A segunda linha cria uma instância do aplicativo Express chamada -app-. O aplicativo Express é responsável por lidar com rotas, solicitações e respostas.<br>");
+    document.write("III - A terceira linha define uma rota GET para '/usuario'. Quando um cliente faz uma solicitação GET para essa rota, o callback definido como segundo argumento é executado. O callback recebe dois parâmetros: -req- (abreviação de -request-), que contém informações sobre a solicitação recebida, e -res- (abreviação de -response-), que é usado para enviar uma resposta de volta ao cliente. Nesse caso, o callback envia a string 'Usuário acessado com sucesso' como resposta.<br><br>");
+    document.write("IV - A quarta linha inicia o servidor Express e faz com que ele escute na porta 3000. Isso significa que o servidor estará disponível em http://localhost:3000. Quando o servidor é iniciado com sucesso, o callback definido como segundo argumento é executado. Nesse caso, o callback simplesmente exibe a mensagem 'Servidor iniciado com sucesso' no console.<br><br>");
+    document.write("Resumindo, o código define um servidor Express que responde com a mensagem 'Usuário acessado com sucesso' quando uma solicitação GET é feita para a rota '/usuario' e inicia o servidor na porta 3000.<br><br>");
+  
+  </script>
+</body>
+</html>

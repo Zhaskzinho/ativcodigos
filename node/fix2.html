@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <a href="../index.html">Home<br></a>
+
+  <title>document</title>
+</head>
+<body>
+
+   <h1>oque está acontecendo no código abaixo;</h1> 
+    
+    <h2>app.get('/', (req, res) => {
+        const nome = 'Jonh Doe';
+        res.render('index', { nome: nome});
+    });</h2>
+
+  <script>
+   
+    document.write("I - Nesse código, está sendo definida uma rota GET para a raiz (-/-) do aplicativo Express. Quando um cliente faz uma solicitação GET para essa rota, o callback é executado.<br><br>");
+    document.write("II - Dentro do callback, uma variável chamada -nome- é criada e recebe o valor -Jonh Doe-. Em seguida, a função res.render() é chamada. Essa função é usada para renderizar um arquivo de modelo ou visualização com os dados fornecidos.<br><br>");
+    document.write("III - No exemplo, a função res.render() recebe dois argumentos: o primeiro é o nome do arquivo de visualização (ou modelo) chamado -index-, e o segundo é um objeto contendo os dados que serão passados para o arquivo de visualização. Nesse caso, o objeto contém uma propriedade chamada -nome- com o valor da variável -nome-.<br><br>");
+    document.write("IV  - A finalidade desse código é renderizar o arquivo de visualização -index- e passar o valor do nome para ser utilizado na renderização da página. O arquivo de visualização -index- pode ser um arquivo HTML com um mecanismo de modelo (como EJS, Pug ou Handlebars) que permite a incorporação de dados dinâmicos na página.<br><br>");
+    document.write("No geral, quando um cliente acessa a rota principal do aplicativo Express, o código renderiza o arquivo de visualização -index- e passa o valor -Jonh Doe- para ser usado no processo de renderização. O resultado é enviado como resposta ao cliente.<br><br>");
+  
+  </script>
+</body>
+</html>

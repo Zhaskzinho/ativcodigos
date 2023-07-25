@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <a href="../index.html">Home<br></a>
+
+  <title>document</title>
+</head>
+<body>
+
+   <h1>oque está acontecendo no código abaixo;</h1> 
+    
+    <h2>app.get('/usuarios/:id', (req, res) => {
+        const id = req.params.id;
+        res.send(`ID do usuário: ${id}`);
+    });</h2>
+
+  <script>
+   
+    document.write("I - Nesse código, está sendo definida uma rota GET para -/usuarios/:id- no aplicativo Express. O trecho -:id- na rota é um parâmetro de rota, permitindo que você acesse dinamicamente um valor variável na URL.<br><br>");
+    document.write("II - Quando um cliente faz uma solicitação GET para essa rota, o callback é executado. Dentro do callback, a constante -id- é criada e recebe o valor do parâmetro -id- extraído da URL usando req.params.id. O valor do parâmetro é capturado dinamicamente com base na parte da URL após -/usuarios/-.<br><br>");
+    document.write("III - Em seguida, a função res.send() é chamada para enviar uma resposta de volta ao cliente. Nesse caso, a resposta é uma string que inclui o ID do usuário capturado. A sintaxe ${id} é usada para incorporar o valor da constante -id- na string de resposta.<br><br>");
+    document.write("IV - Portanto, quando um cliente acessa a rota -/usuarios/123-, por exemplo, o código captura o valor -123- do parâmetro -id- na URL e envia a resposta: ID do usuário: 123<br><br>");
+    document.write("Resumindo, Essa funcionalidade de parâmetros de rota permite criar rotas dinâmicas que podem manipular diferentes valores de identificação, como IDs de usuário, permitindo a personalização do comportamento do servidor com base nos valores fornecidos na URL.<br><br>");
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <a href="../index.html">Home<br></a>
+
+  <title>document</title>
+</head>
+<body>
+
+   <h1>oque está acontecendo no código abaixo;</h1> 
+    
+    <p> body
+        h1 Bem-vindo, <%= nome %>! /h1
+    /body</p>
+
+  <script>
+   
+    document.write("I - Nesse código, estamos no contexto de um arquivo de visualização (template) que será renderizado pelo Express usando um mecanismo de modelo (como EJS, Pug ou Handlebars).<br><br>");
+    document.write("II - Dentro da tag <body>, há uma tag -h1- que exibe uma mensagem de boas-vindas. No entanto, o texto <%= nome %> é uma interpolação de código no template, que será substituída pelo valor da variável -nome- passada no objeto durante a renderização.<br><br>");
+    document.write("III - Por exemplo, se o objeto de dados fornecido durante a renderização contiver a propriedade -nome- com o valor -Jonh Doe-, a interpolação de código <%= nome %> será substituída por -Jonh Doe-. Como resultado, a mensagem de boas-vindas será exibida como: Bem-vindo, Jonh Doe!<br><br>");
+    document.write("Essa interpolação de código é uma maneira de exibir dinamicamente valores ou variáveis dentro do template. Durante a renderização, o mecanismo de modelo substituirá essas expressões de interpolação pela representação do valor atual das variáveis correspondentes. Dessa forma, é possível criar páginas dinâmicas que exibem informações específicas com base nos dados fornecidos durante a renderização.<br><br>");
+  
+  </script>
+</body>
+</html>
